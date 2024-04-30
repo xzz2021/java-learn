@@ -169,7 +169,7 @@ public class ForFn {
         }
     }
 //    13. 阶乘
-    public static void factorial(int n) {
+public static void factorial(int n) {
         int result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
