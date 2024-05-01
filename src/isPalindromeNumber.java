@@ -1,5 +1,5 @@
 // 判断是否为回文数字
-public class isPalindromeNumber {
+public class IsPalindromeNumber {
     public static void main(String[] args) {
 
         System.out.println(fn1(12321));
