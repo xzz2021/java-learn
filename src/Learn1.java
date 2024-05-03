@@ -3,7 +3,8 @@ import top.xzz2022.random.GenerateNum;
 public class Learn1 {
     public static void main(String[] args) {
 //        genInt(6,13);
-        reverseArr(new int[]{1, 3, 5, 7, 9});
+//        reverseArr(new int[]{1, 3, 5, 7, 9});
+        randomArr(new int[]{1, 3, 5, 7, 9});
     }
 
     // 生成范围随机数
@@ -17,6 +18,18 @@ public class Learn1 {
             int temp = args[i];
             args[i] = args[j];
             args[j] = temp;
+        }
+        for (int i = 0; i < args.length; i++) {
+            System.out.println(args[i]);
+        }
+    }
+    // 数组内元素随机交换
+    public static void randomArr(int[] args) {
+        for (int i = 0; i < args.length; i++) {
+            int index = GenerateNum.generateInt(0, args.length - 1);
+            int temp = args[i];
+            args[i] = args[index];
+            args[index] = temp;
         }
         for (int i = 0; i < args.length; i++) {
             System.out.println(args[i]);
